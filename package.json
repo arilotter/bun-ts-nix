@@ -1,0 +1,18 @@
+{
+  "name": "bun-nix-template",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "lefthook": "^1.6.7"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "bun src/index.ts",
+    "lint": "biome check ./",
+    "fix": "biome check --apply ./"
+  },
+  "dependencies": {}
+}
